@@ -1,0 +1,75 @@
+.auth-page {
+  min-height: 100vh;
+  /* Full viewport height */
+  background: linear-gradient(45deg,#be12e9,#1f7ee2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-page-contents {
+  width: 100%;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+auth-page h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Form Group Style */
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  padding: 8px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #df89ef;
+  /* Soft lavender */
+  box-shadow: 0 0 5px rgba(149, 100, 151, 0.5);
+  /* Soft purple glow */
+  outline: none;
+}
+
+auth-page p {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.toggle-auth {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toggle-auth:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

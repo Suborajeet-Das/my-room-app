@@ -1,0 +1,47 @@
+.hero-section{
+  display: flex;
+  width: 1300px;
+  height: 70vh;
+  padding-top: 120px; /* Adjust based on navbar height */
+  padding-left: 100px;
+}
+
+.hero-left{
+  width: 45vw;
+  padding: 80px 0px;
+}
+
+.hero-left h1{
+  font-size: 3.2rem;
+  color: rgb(41, 36, 36);
+}
+
+.bold {
+  color: black;
+  font-weight: bolder;
+}
+
+.highlight {
+  color: purple;
+  padding: 0 3px;           /* Optional: Adds spacing around the highlighted word */
+  border-radius: 3px;       /* Optional: Rounded corners for a highlight effect */
+  font-weight: bolder;
+  background: linear-gradient(to right, #6a1b9a, #ba68c8); /* Purple gradient */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+}
+
+.hero-right{
+  width: 55vw;
+}
+.hero-right img{
+  height: 500px;
+}
+
+/* Responsive Adjustment for smaller screens */
+@media (max-width: 768px) {
+  body {
+    /* padding-top: 80px; Reduce padding for smaller screens */
+    /* padding-left: 20px; Reduce padding on smaller screens */
+  }
+}
